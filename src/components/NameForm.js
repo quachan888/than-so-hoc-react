@@ -11,7 +11,7 @@ export default function NameForm() {
 
     return (
         <>
-            <MDBContainer className="p-4 bg-light">
+            <MDBContainer className="p-3 bg-light">
                 <form>
                     <MDBInput
                         className="mb-4"
@@ -30,15 +30,15 @@ export default function NameForm() {
                 </form>
             </MDBContainer>
 
-            <MDBContainer className="bg-light text-dark p-4">
+            <MDBContainer className="bg-light text-dark py-3 px-5">
                 <h3>
                     Bạn <span className="text-primary">{fullname}</span>, ngày sinh{' '}
                     <span className="text-primary">{birthday}</span>
                 </h3>
             </MDBContainer>
 
-            <MDBContainer className="mt-3 bg-light text-dark">
-                <MDBRow className="row-cols-1 row-cols-md-2 g-3">
+            <MDBContainer className="bg-light py-5 text-dark">
+                <MDBRow className="row-cols-1 row-cols-md-2 g-4 px-3">
                     {result.map((row) => (
                         <MDBCol key={row.title}>
                             <CardInfo title={row.title} number={row.number} details={row.details} />

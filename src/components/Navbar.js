@@ -31,7 +31,7 @@ export default function Navbar() {
                     >
                         <MDBIcon icon="bars" fas />
                     </MDBNavbarToggler>
-                    <MDBCollapse show={showNavColor} navbar>
+                    {/* <MDBCollapse show={showNavColor} navbar>
                         <MDBNavbarNav className="me-auto mb-2 mb-lg-0">
                             <MDBNavbarItem className="active">
                                 <MDBNavbarLink aria-current="page" href="#">
@@ -42,7 +42,7 @@ export default function Navbar() {
                                 <MDBNavbarLink href="#">Theo ngày</MDBNavbarLink>
                             </MDBNavbarItem>
                         </MDBNavbarNav>
-                    </MDBCollapse>
+                    </MDBCollapse> */}
                 </MDBContainer>
             </MDBNavbar>
         </MDBContainer>
