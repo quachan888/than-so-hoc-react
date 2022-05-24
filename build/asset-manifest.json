@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/than-so-hoc-react/static/css/main.a70e1d89.chunk.css",
-    "main.js": "/than-so-hoc-react/static/js/main.e5be1eb2.chunk.js",
-    "main.js.map": "/than-so-hoc-react/static/js/main.e5be1eb2.chunk.js.map",
+    "main.js": "/than-so-hoc-react/static/js/main.01f1a490.chunk.js",
+    "main.js.map": "/than-so-hoc-react/static/js/main.01f1a490.chunk.js.map",
     "runtime-main.js": "/than-so-hoc-react/static/js/runtime-main.5d4ac949.js",
     "runtime-main.js.map": "/than-so-hoc-react/static/js/runtime-main.5d4ac949.js.map",
     "static/css/2.070ffd8c.chunk.css": "/than-so-hoc-react/static/css/2.070ffd8c.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.070ffd8c.chunk.css",
     "static/js/2.a3be4931.chunk.js",
     "static/css/main.a70e1d89.chunk.css",
-    "static/js/main.e5be1eb2.chunk.js"
+    "static/js/main.01f1a490.chunk.js"
   ]
 }

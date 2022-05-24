@@ -5,7 +5,7 @@ import numCalculator from '../utils/numCalculator';
 
 export default function NameForm() {
     const [fullname, setFullname] = useState('Quách Hà Chấn An');
-    const [birthday, setBirthday] = useState('03211984');
+    const [birthday, setBirthday] = useState('21031984');
 
     const result = numCalculator(fullname, birthday);
 
@@ -23,8 +23,8 @@ export default function NameForm() {
                     <MDBInput
                         className="mb-4"
                         type="text"
-                        id="ddmmyyyy"
-                        label="Ngày sinh: mmddyyyy"
+                        id="birthday"
+                        label="Ngày sinh: ddmmyyyy"
                         onChange={(e) => setBirthday(e.target.value)}
                     />
                 </form>

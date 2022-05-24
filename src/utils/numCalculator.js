@@ -1,4 +1,5 @@
 export default function numCalculator(fullnameInput, birthdayInput) {
+    // DDMMYYYY
     const ngaySinhInput = birthdayInput;
     const tenInput = fullnameInput;
 
