@@ -17,7 +17,7 @@ export default function Navbar() {
     const [showNavColorThird, setShowNavColorThird] = useState(false);
 
     return (
-        <MDBContainer>
+        <MDBContainer className="bg-primary text-white">
             <MDBNavbar expand="lg" dark bgColor="primary">
                 <MDBContainer fluid>
                     <MDBNavbarBrand href="#">Thần Số Học</MDBNavbarBrand>

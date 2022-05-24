@@ -3,12 +3,16 @@ import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from 'mdb-rea
 
 export default function CardInfo({ title, number, details }) {
     return (
-        <MDBCard style={{ maxWidth: '22rem' }}>
+        <MDBCard border="success" shadow="3">
             <MDBCardBody>
                 <MDBCardTitle>
                     {title}: <span className="fw-bold text-danger">{number}</span>
                 </MDBCardTitle>
-                <MDBCardText>{details}</MDBCardText>
+                <div
+                    dangerouslySetInnerHTML={{
+                        __html: details
+                    }}
+                ></div>
             </MDBCardBody>
         </MDBCard>
     );
