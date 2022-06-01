@@ -38,10 +38,15 @@ export default function NameForm() {
             </MDBContainer>
 
             <MDBContainer className="bg-light py-5 text-dark">
-                <MDBRow className="row-cols-1 row-cols-md-2 g-4 px-3">
+                <MDBRow className="row-cols-1 row-cols-lg-2 g-4 px-3">
                     {result.map((row) => (
                         <MDBCol key={row.title}>
-                            <CardInfo title={row.title} number={row.number} details={row.details} />
+                            <CardInfo
+                                title={row.title}
+                                number={row.number}
+                                details={row.details}
+                                current={row.current}
+                            />
                         </MDBCol>
                     ))}
                 </MDBRow>

@@ -351,23 +351,36 @@ export default function numCalculator(fullnameInput, birthdayInput) {
     };
 
     const result = [
-        { title: 'Số Ngày Sinh', number: NS, details: lygiaiSoNgaySinh[NS] },
-        { title: 'Số Thái Độ', number: TD, details: lygiaiSoThaiDo[TD] },
-        { title: 'Số Đường Đời', number: DDCheck, details: lyGiaiSoDuongdoi[DDCheck] },
-        { title: 'Số Linh Hồn', number: LH, details: lyGiaiSoLinhHon[LH] },
-        { title: 'Số Nhân Cách', number: NC, details: lygiaiSoNhanCach[NC] },
-        { title: 'Số Sứ Mệnh', number: SM, details: lygiaiSoSuMenh[SM] },
-        { title: 'Năm Cá Nhân (' + currentYear + ')', number: namCaNhan, details: lyGiaiNamCaNhan[namCaNhan] },
-        {
-            title: 'Tháng Cá Nhân (' + currentMonth + '/' + currentYear + ')',
-            number: thangCaNhan,
-            details: lyGiaiThangCaNhan[thangCaNhan]
-        },
         {
             title: 'Ngày Cá Nhân (' + currentMonth + '/' + currentDay + '/' + currentYear + ')',
             number: ngayCaNhan,
-            details: lyGiaiNgayCaNhan[ngayCaNhan]
-        }
+            details: lyGiaiNgayCaNhan[ngayCaNhan],
+            current: true
+        },
+        {
+            title: 'Tháng Cá Nhân (' + currentMonth + '/' + currentYear + ')',
+            number: thangCaNhan,
+            details: lyGiaiThangCaNhan[thangCaNhan],
+            current: true
+        },
+
+        {
+            title: 'Năm Cá Nhân (' + currentYear + ')',
+            number: namCaNhan,
+            details: lyGiaiNamCaNhan[namCaNhan],
+            current: true
+        },
+        { title: 'Số Ngày Sinh', number: NS, details: lygiaiSoNgaySinh[NS], current: false },
+        { title: 'Số Thái Độ', number: TD, details: lygiaiSoThaiDo[TD], current: false },
+        {
+            title: 'Số Đường Đời',
+            number: DDCheck,
+            details: lyGiaiSoDuongdoi[DDCheck],
+            current: false
+        },
+        { title: 'Số Linh Hồn', number: LH, details: lyGiaiSoLinhHon[LH], current: false },
+        { title: 'Số Nhân Cách', number: NC, details: lygiaiSoNhanCach[NC], current: false },
+        { title: 'Số Sứ Mệnh', number: SM, details: lygiaiSoSuMenh[SM], current: false }
     ];
 
     return result;

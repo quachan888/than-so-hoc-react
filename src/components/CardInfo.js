@@ -1,13 +1,14 @@
 import React from 'react';
-import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBBtn } from 'mdb-react-ui-kit';
+import { MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardHeader } from 'mdb-react-ui-kit';
 
-export default function CardInfo({ title, number, details }) {
+export default function CardInfo({ title, number, details, current }) {
     return (
-        <MDBCard border="success" shadow="3">
+        <MDBCard border={current ? 'primary' : 'success'} shadow="3">
             <MDBCardBody>
-                <MDBCardTitle>
+                <MDBCardHeader tag="h3" className="mb-3">
                     {title}: <span className="fw-bold text-danger">{number}</span>
-                </MDBCardTitle>
+                </MDBCardHeader>
+
                 <div
                     dangerouslySetInnerHTML={{
                         __html: details
